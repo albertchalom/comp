@@ -19,7 +19,7 @@ class Image(Content):
 class Contributor(models.Model):
 	first_name = models.CharField(max_length = 32)
 	last_name = models.CharField(max_length = 32)
-	content = Content.objects.all() ##????????
+	content = Content.objects.all()
 	def die(self): 
-		self.delete() #is modelself self?
+		self.delete()
 # Create your models here.
